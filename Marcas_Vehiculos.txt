@@ -1,1 +1,4 @@
-﻿;id1;Marca1
+﻿;
+id1;marca1
+;
+id2;marca2
