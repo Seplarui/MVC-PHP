@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Y:/PHP/Tema%205/MVC_NetBeans/Modelo/Marca_Modelo.php</file>
-            <file>file:/Y:/PHP/Tema%205/MVC_NetBeans/Marcas_Vehiculos2.txt</file>
-            <file>file:/Y:/PHP/Tema%205/MVC_NetBeans/Alta_Vehiculo.php</file>
-            <file>file:/Y:/PHP/Tema%205/MVC_NetBeans/Vista/Marca_Vista.php</file>
-            <file>file:/Y:/PHP/Tema%205/MVC_NetBeans/Acceso_Ficheros/acceso.php</file>
-            <file>file:/Y:/PHP/Tema%205/MVC_NetBeans/Controlador/Marca_Controlador.php</file>
+            <file>file:/Y:/PHP/MVC/Modelo/Marca_Modelo.php</file>
+            <file>file:/Y:/PHP/MVC/Marcas_Vehiculos.txt</file>
+            <file>file:/Y:/PHP/MVC/Modelo/Marcas_Vehiculos.txt</file>
+            <file>file:/Y:/PHP/MVC/Alta_Vehiculo.php</file>
         </group>
     </open-files>
 </project-private>

@@ -20,19 +20,20 @@
 <td><input type="reset" name="borrar" value="Borrar"></td></tr>
 
 <?php
-error_reporting(0);
-include_once('Modelo/Marca_Modelo.php');
-$id_form=$_REQUEST['id'];
+//error_reporting(0);
+include_once('/Modelo/Marca_Modelo.php');
+//$id_form=$_REQUEST['id'];
+$id_form=filter_input(INPUT_POST, 'id');
 $vehiculo = new Marca_Modelo();
 $vehiculo->setId_marca($id_form);
-$marca_form=$_REQUEST['marca'];
+//$marca_form=$_REQUEST['marca'];
+$marca_form=  filter_input(INPUT_POST, 'marca');
 $vehiculo->setMarca_vehiculo($marca_form);
-print_r($id_form);
-print_r($marca_form);
+/*print_r($id_form);
+print_r($marca_form);*/
 /*$prueba_fichero=fopen("Marcas_vehiculos.txt","a");
 fwrite($prueba_fichero,$id_form);*/
 ?>
-
 </form>
 </table>
 </body>

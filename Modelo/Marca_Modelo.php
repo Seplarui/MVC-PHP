@@ -35,12 +35,9 @@ class Marca_Modelo {
     function setId_marca($id_marca) {
         
        // $id_form=$_REQUEST['id'];
-        $fichero=fopen("../Marcas_Vehiculos.txt","a");
-        fwrite($fichero,$this->id_marca=$id_marca);
+        $fichero=fopen("Marcas_Vehiculos.txt","a");
+        fwrite($fichero,$id_marca.";");
         fclose($fichero);
-        
-        
-        //$this->id_marca = $id_marca;
     }
 
     function setMarca_vehiculo($marca_vehiculo) {
@@ -50,8 +47,8 @@ class Marca_Modelo {
        /* print_r($id_form);
         print_r($marca_form);*/
         //$marca_form=$_REQUEST['marca'];
-        $fichero=fopen("../Marcas_Vehiculos.txt","a");
-        fwrite($fichero,$this->marca_vehiculo = $marca_vehiculo);
+        $fichero=fopen("Marcas_Vehiculos.txt","a");
+        fwrite($fichero,$marca_vehiculo);
         fclose($fichero);
         
         //$this->marca_vehiculo = $marca_vehiculo;
