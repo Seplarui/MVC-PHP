@@ -1,4 +1,6 @@
-1;kk
-2;kk2
-3;kk3
-4;kk4
+
+ 
+id1 marca1
+id2 marca2
+id3 marca3
+id4 marca4

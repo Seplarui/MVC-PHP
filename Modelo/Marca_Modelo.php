@@ -35,7 +35,7 @@ class Marca_Modelo {
     function setId_marca($id_marca) {
         
         $fichero=fopen("Marcas_Vehiculos.txt","a");
-        fwrite($fichero,$id_marca.";");
+        fwrite($fichero,$id_marca.PHP_EOL);
         fclose($fichero);
     }
 

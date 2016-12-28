@@ -36,5 +36,6 @@ fwrite($prueba_fichero,$id_form);*/
 ?>
 </form>
 </table>
+<a href="index.php">Inicio</a>
 </body>
 </html>

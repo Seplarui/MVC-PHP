@@ -1,2 +1,0 @@
-Nombre contacto 1;email contacto 1;website contacto 1;tel�fono contacto 1
-Nombre contacto 2;email contacto 2;website contacto 2;tel�fono contacto 2
