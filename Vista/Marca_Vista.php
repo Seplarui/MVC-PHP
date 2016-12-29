@@ -18,15 +18,27 @@
 <hr>
 <ul><li><a href="../alta_vehiculo.php">Alta Vehículo</a></li></ul>
 
-<table border="1">
+<!--<table border="1">
 
-<tr><td>LISTADO DE MARCAS DE COCHES</td>
+<tr><td>LISTADO DE MARCAS DE COCHES</td>-->
 
 <?php
 require_once('../Controlador/Marca_Controlador.php');
 
+$longitud_k=count($matrizMarca);
+$x=0;
+for ($i=0;$i<$longitud_k+2;$i++) {
+    if($x<=$longitud_k) {
+      echo "<table border=1>";
+           echo "<tr><td>".$matrizMarca[$x]."</td><td>".$matrizMarca[$x+1]."</td></tr>";
+           echo "</table>";
+           $x=$x+2;
+    
+    }
+    
+}
 
-foreach ($matrizMarca as $registro) {
+/*foreach ($matrizMarca as $registro) {
 	
         /*echo $registro[0]."<br>";
         echo $registro[1]."<br>";
@@ -40,17 +52,17 @@ foreach ($matrizMarca as $registro) {
    /* $vector=explode(";",$registro);
     print_r($vector);
     */
-    
+    /*
 	echo "<tr><td>".$registro . "</td></tr>";
 
 
-}
+}*/
 
 ?>
 	</table>
 	<a href="index2.php">Inicio</a>
 	<hr>
-	<i>CEEDCV Sebastián Plaza 2016/2017 21/12/2016</i>
+	<i>CEEDCV  2016/2017 21/12/2016</i>
 	</div>
 
 </body>

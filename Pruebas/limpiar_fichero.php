@@ -12,7 +12,6 @@ error_reporting(0);
    $x=0;
    for ($i=0;$i<$longitud;$i++) {
        
-       //trim($filas[$i]);
        
        if (($filas[$i]=="\r\n") || ($filas[$i]=="")){
            unset($filas[$i]);

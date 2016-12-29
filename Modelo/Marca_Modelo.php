@@ -19,15 +19,21 @@ class Marca_Modelo {
         
         $fichero=fopen("..\Marcas_Vehiculos.txt","r");
         
-       // $contador_lineas=0;
+      
         while(!feof($fichero)) {
             $filas[]=fgets($fichero,999999);
-            //$campo[$contador_lineas]=explode(';',$filas);
-            //$contador_lineas++;
-                 
-            
         }
-        //return $this->marca_vehiculo=$campo[$contador_lineas];
+        
+    $longitud=count($filas);
+   for ($i=0;$i<$longitud;$i++) {
+       
+       
+       if (($filas[$i]=="\r\n") || ($filas[$i]=="")){
+           unset($filas[$i]);
+       }
+   }   
+
+
         return $this->marca_vehiculo[]=$filas;
         
     }
