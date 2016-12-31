@@ -40,24 +40,21 @@ for($i=0;$i<$longitud;$i++) {
 
 $array_def=  array_values($cadena_array);
 
-/*echo "<pre>";
-echo "Array_values";
-var_dump($array_def);
-echo "</pre>";*/
-
 ?>
 
 
 <!--<table border="1">-->
     
-<table border="1">
+<table border="2">
+    <tr><td>ID VEHÍCULO</td><td>MARCA VEHÍCULO</td></tr>
+    
     
     <?php
     
     $longitud=count($array_def);
     $x=0;
-    $val_longitud=$longitud*2;
-    print_r($val_longitud);
+    //$val_longitud=$longitud*2;
+    //print_r($val_longitud);
     for($i=0;$i<$longitud;$i++) {
         
         if ($x<$longitud) {
@@ -71,9 +68,7 @@ echo "</pre>";*/
         }
         
     }
-    print_r("Longitud " .$longitud);
-    echo "<br>";
-    print_r("Valor x: ".$x);
+    
     ?>
     
         

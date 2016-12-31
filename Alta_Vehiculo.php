@@ -20,7 +20,7 @@
 <td><input type="reset" name="borrar" value="Borrar"></td></tr>
 
 <?php
-//error_reporting(0);
+error_reporting(0);
 include_once('/Modelo/Marca_Modelo.php');
 if (($_REQUEST['id']!="" && $_REQUEST['marca']!="" )) {
 

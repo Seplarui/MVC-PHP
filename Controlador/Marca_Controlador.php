@@ -1,5 +1,6 @@
 <?php
 
+error_reporting(0);
 require_once ('../Modelo/Marca_Modelo.php');
 
 $marca_coche=new Marca_Modelo();
