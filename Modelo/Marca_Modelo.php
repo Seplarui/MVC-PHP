@@ -41,14 +41,14 @@ class Marca_Modelo {
     function setId_marca($id_marca) {
         
         $fichero=fopen("Marcas_Vehiculos.txt","a");
-        fwrite($fichero,$id_marca.PHP_EOL);
+        fwrite($fichero,$id_marca."; ");
         fclose($fichero);
     }
 
     function setMarca_vehiculo($marca_vehiculo) {
       
         $fichero=fopen("Marcas_Vehiculos.txt","a");
-        fwrite($fichero,$marca_vehiculo.PHP_EOL);
+        fwrite($fichero,$marca_vehiculo."; ");
         fclose($fichero);
         
         //$this->marca_vehiculo = $marca_vehiculo;
@@ -57,9 +57,7 @@ class Marca_Modelo {
       
 }
 
-/*$prueba=new Marca_Modelo();
-$matriz=$prueba->getMarca_vehiculo();
-print_r($matriz);*/
+
 
 
 ?>

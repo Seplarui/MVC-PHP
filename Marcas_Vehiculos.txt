@@ -1,14 +1,1 @@
-
-
-id5
-marca5
-id6
-marca6
-id7
-marca7
-kk1
-kk1
-
-
-id8
-marca8
+; ; ; ; ; ; id1; marca1; id2; marca2; id3; marca3; ; ; ; ; id4; marca4; id5; marca5; id6; marca6; ; ; id7; marca7; ; ; id8; marca8; id9; marca9; id10; marca10; ; ; ; ; id11; marca11; ; ; id12; marca12; id13; marca13; id14; marca14; id15; marca15; 

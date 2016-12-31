@@ -22,17 +22,27 @@
 <?php
 //error_reporting(0);
 include_once('/Modelo/Marca_Modelo.php');
-//$id_form=$_REQUEST['id'];
-$id_form=filter_input(INPUT_POST, 'id');
+if (($_REQUEST['id']!="" && $_REQUEST['marca']!="" )) {
+
+    $tmp_id = (isset($_REQUEST['id'])) ? strip_tags(trim(htmlspecialchars($_REQUEST['id'], ENT_QUOTES, "ISO-8859-1"))) : "";
+$id_form=$tmp_id;
+
+    $tmp_marca = (isset($_REQUEST['marca'])) ? strip_tags(trim(htmlspecialchars($_REQUEST['marca'], ENT_QUOTES, "ISO-8859-1"))) : "";
+$marca_form=$tmp_marca;
+    
+} else if ($_REQUEST['id']==""){
+    echo "<p>Introduce algún valor en el id por favor</p>";
+    
+} else if($_REQUEST['marca']=="") {
+    echo "<p>Introduce algún valor en la marca del vehículo por favor</p>";
+}
+
+
 $vehiculo = new Marca_Modelo();
 $vehiculo->setId_marca($id_form);
-//$marca_form=$_REQUEST['marca'];
-$marca_form=  filter_input(INPUT_POST, 'marca');
+
 $vehiculo->setMarca_vehiculo($marca_form);
-/*print_r($id_form);
-print_r($marca_form);*/
-/*$prueba_fichero=fopen("Marcas_vehiculos.txt","a");
-fwrite($prueba_fichero,$id_form);*/
+
 ?>
 </form>
 </table>

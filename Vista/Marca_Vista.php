@@ -23,47 +23,65 @@
 <tr><td>LISTADO DE MARCAS DE COCHES</td>-->
 
 <?php
+error_reporting(0);
 require_once('../Controlador/Marca_Controlador.php');
 
-$longitud_k=count($matrizMarca);
-$x=0;
-for ($i=0;$i<$longitud_k+2;$i++) {
-    if($x<=$longitud_k) {
-      echo "<table border=1>";
-           echo "<tr><td>".$matrizMarca[$x]."</td><td>".$matrizMarca[$x+1]."</td></tr>";
-           echo "</table>";
-           $x=$x+2;
+$cadena=implode(":",$matrizMarca);
+$reemplazo=str_replace(";","",$cadena);
+$cadena_array=explode(" ",$reemplazo);
+$longitud=count($cadena_array);
+
+for($i=0;$i<$longitud;$i++) {
     
+    if($cadena_array[$i]=="") {
+        unset($cadena_array[$i]);
     }
-    
 }
 
-/*foreach ($matrizMarca as $registro) {
-	
-        /*echo $registro[0]."<br>";
-        echo $registro[1]."<br>";
-        echo $registro[2]."<br>";
-        echo $registro[3]."<br>";*/
-    
-    
-    //print_r($vector);
-    //print_r( $vector[0][1]);
-        
-   /* $vector=explode(";",$registro);
-    print_r($vector);
-    */
-    /*
-	echo "<tr><td>".$registro . "</td></tr>";
+$array_def=  array_values($cadena_array);
 
-
-}*/
+/*echo "<pre>";
+echo "Array_values";
+var_dump($array_def);
+echo "</pre>";*/
 
 ?>
-	</table>
-	<a href="index2.php">Inicio</a>
-	<hr>
-	<i>CEEDCV  2016/2017 21/12/2016</i>
-	</div>
+
+
+<!--<table border="1">-->
+    
+<table border="1">
+    
+    <?php
+    
+    $longitud=count($array_def);
+    $x=0;
+    $val_longitud=$longitud*2;
+    print_r($val_longitud);
+    for($i=0;$i<$longitud;$i++) {
+        
+        if ($x<$longitud) {
+            
+        
+        
+        echo "<tr>";
+        echo "<td>".$array_def[$x]."</td><td>".$array_def[$x+1]."</td>";
+        echo "</tr>";
+        $x=$x+2;
+        }
+        
+    }
+    print_r("Longitud " .$longitud);
+    echo "<br>";
+    print_r("Valor x: ".$x);
+    ?>
+    
+        
+        
+    
+    
+</table>
+
 
 </body>
 </html>
